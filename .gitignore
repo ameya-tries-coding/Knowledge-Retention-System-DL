@@ -1,0 +1,17 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Model (optional if large)
+*.h5
+
+# Dataset (optional)
+*.csv
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,123 @@
+.result-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  animation: fadeSlide 0.45s ease forwards;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result-title-label {
+  font-family: "DM Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Arc */
+.arc-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.arc-svg { overflow: visible; }
+
+.arc-pct {
+  font-family: "DM Mono", monospace;
+  font-size: 22px;
+  font-weight: 700;
+  fill: var(--text-primary);
+}
+
+.arc-label {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  fill: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Stats row */
+.stats-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+}
+
+.stat-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 1rem 0.75rem;
+  border-radius: 12px;
+  border: 1.5px solid var(--border);
+  background: var(--card-inner);
+  text-align: center;
+}
+
+.tile-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.tile-value {
+  font-family: "DM Mono", monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.tile-key {
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.review-val {
+  font-size: 0.82rem;
+  color: var(--accent-2) !important;
+}
+
+/* Progress bar */
+.prog-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.prog-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-family: "DM Mono", monospace;
+  letter-spacing: 0.04em;
+}
+
+.prog-track {
+  height: 7px;
+  background: var(--border);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.prog-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  border-radius: 99px;
+  transition: width 1.1s cubic-bezier(.4,0,.2,1);
+}
