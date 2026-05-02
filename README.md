@@ -121,14 +121,6 @@ Next Review: 5 days
 
 ---
 
-## 📸 UI Preview
-
-(Add your screenshot here)
-
-![Dashboard](images/dashboard.png)
-
----
-
 ## 🎯 Use Cases
 
 * Personalized learning systems
